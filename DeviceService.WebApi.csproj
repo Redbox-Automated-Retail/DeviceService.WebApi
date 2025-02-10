@@ -1,0 +1,223 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+  <PropertyGroup>
+    <TargetFramework>netstandard2.1</TargetFramework>
+    <OutputType>Library</OutputType>
+    <ApplicationVersion>1.10.13.0</ApplicationVersion>
+    <GenerateAssemblyInfo>false</GenerateAssemblyInfo>
+    <Company>DeviceService.WebApi</Company>
+    <FileVersion>1.10.13</FileVersion>
+    <InformationalVersion>1.0.0</InformationalVersion>
+    <Product>DeviceService.WebApi</Product>
+    <AssemblyTitle>DeviceService.WebApi</AssemblyTitle>
+    <AssemblyVersion>1.10.13.0</AssemblyVersion>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|AnyCPU'">
+    <Configuration>Release</Configuration>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|AnyCPU'">
+    <Configuration>Release</Configuration>
+  </PropertyGroup>
+  <ItemGroup>
+    <ProjectReference Include="lib\DeviceService.Client.Core\DeviceService.Client.Core.csproj" />
+    <ProjectReference Include="lib\DeviceService.ComponentModel\DeviceService.ComponentModel.csproj" />
+    <ProjectReference Include="lib\DeviceService.Domain\DeviceService.Domain.csproj" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Remove="lib\DeviceService.Client.Core\AssemblyInfo.cs" />
+    <Compile Remove="lib\DeviceService.Client.Core\DeviceServiceClient.cs" />
+    <Compile Remove="lib\DeviceService.Client.Core\obj\Debug\netstandard2.1\.NETStandard,Version=v2.1.AssemblyAttributes.cs" />
+    <Compile Remove="lib\DeviceService.Client.Core\SignalRClient.cs" />
+    <Compile Remove="lib\DeviceService.ComponentModel\Analytics\IAnalyticsService.cs" />
+    <Compile Remove="lib\DeviceService.ComponentModel\AssemblyInfo.cs" />
+    <Compile Remove="lib\DeviceService.ComponentModel\Bluefin\ActivateRequest.cs" />
+    <Compile Remove="lib\DeviceService.ComponentModel\Bluefin\DeactivateRequest.cs" />
+    <Compile Remove="lib\DeviceService.ComponentModel\Bluefin\IBluefinServiceClient.cs" />
+    <Compile Remove="lib\DeviceService.ComponentModel\CardBrandEnum.cs" />
+    <Compile Remove="lib\DeviceService.ComponentModel\CardReadExitType.cs" />
+    <Compile Remove="lib\DeviceService.ComponentModel\CardSourceType.cs" />
+    <Compile Remove="lib\DeviceService.ComponentModel\CardStats.cs" />
+    <Compile Remove="lib\DeviceService.ComponentModel\CardType.cs" />
+    <Compile Remove="lib\DeviceService.ComponentModel\Commands\BaseCommandRequest.cs" />
+    <Compile Remove="lib\DeviceService.ComponentModel\Commands\CancelCommandRequest.cs" />
+    <Compile Remove="lib\DeviceService.ComponentModel\Commands\CheckActivationCommand.cs" />
+    <Compile Remove="lib\DeviceService.ComponentModel\Commands\CheckDeviceStatusCommand.cs" />
+    <Compile Remove="lib\DeviceService.ComponentModel\Commands\ConfigCommand.cs" />
+    <Compile Remove="lib\DeviceService.ComponentModel\Commands\DeviceServiceCanShutDownCommand.cs" />
+    <Compile Remove="lib\DeviceService.ComponentModel\Commands\DeviceServiceCommands.cs" />
+    <Compile Remove="lib\DeviceService.ComponentModel\Commands\DeviceServiceShutDownCommand.cs" />
+    <Compile Remove="lib\DeviceService.ComponentModel\Commands\IReadCardJob.cs" />
+    <Compile Remove="lib\DeviceService.ComponentModel\Commands\IsConnectedCommandRequest.cs" />
+    <Compile Remove="lib\DeviceService.ComponentModel\Commands\ReadCardCommand.cs" />
+    <Compile Remove="lib\DeviceService.ComponentModel\Commands\ReportAuthorizeResultCommand.cs" />
+    <Compile Remove="lib\DeviceService.ComponentModel\Commands\SetCommandQueueStateCommand.cs" />
+    <Compile Remove="lib\DeviceService.ComponentModel\Commands\SignalRCommands.cs" />
+    <Compile Remove="lib\DeviceService.ComponentModel\Commands\ValidateVersionCommand.cs" />
+    <Compile Remove="lib\DeviceService.ComponentModel\ConnectionState.cs" />
+    <Compile Remove="lib\DeviceService.ComponentModel\DeviceActivationData.cs" />
+    <Compile Remove="lib\DeviceService.ComponentModel\DeviceInputType.cs" />
+    <Compile Remove="lib\DeviceService.ComponentModel\DeviceStatus.cs" />
+    <Compile Remove="lib\DeviceService.ComponentModel\Error.cs" />
+    <Compile Remove="lib\DeviceService.ComponentModel\ErrorState.cs" />
+    <Compile Remove="lib\DeviceService.ComponentModel\Extensions.cs" />
+    <Compile Remove="lib\DeviceService.ComponentModel\FallbackStatusAction.cs" />
+    <Compile Remove="lib\DeviceService.ComponentModel\FallbackType.cs" />
+    <Compile Remove="lib\DeviceService.ComponentModel\FileUpdate\FileUpdateHighLevelStatus.cs" />
+    <Compile Remove="lib\DeviceService.ComponentModel\FileUpdate\FileUpdateStatus.cs" />
+    <Compile Remove="lib\DeviceService.ComponentModel\FileUpdate\IFileModel.cs" />
+    <Compile Remove="lib\DeviceService.ComponentModel\FileUpdate\IFileUpdater.cs" />
+    <Compile Remove="lib\DeviceService.ComponentModel\FileUpdate\IFileUpdateResult.cs" />
+    <Compile Remove="lib\DeviceService.ComponentModel\FileUpdate\IFileUpdateResults.cs" />
+    <Compile Remove="lib\DeviceService.ComponentModel\FileUpdate\IFileUpdateService.cs" />
+    <Compile Remove="lib\DeviceService.ComponentModel\FileUpdate\IUpdateFileManifest.cs" />
+    <Compile Remove="lib\DeviceService.ComponentModel\FileUpdate\IUpdateFileManifestProperties.cs" />
+    <Compile Remove="lib\DeviceService.ComponentModel\FileUpdate\IZipFileUpdateResult.cs" />
+    <Compile Remove="lib\DeviceService.ComponentModel\FileUpdate\ManifestPropertiesStatus.cs" />
+    <Compile Remove="lib\DeviceService.ComponentModel\FileUpdate\ZipFileUpdateStatus.cs" />
+    <Compile Remove="lib\DeviceService.ComponentModel\GeneralSourceType.cs" />
+    <Compile Remove="lib\DeviceService.ComponentModel\Header.cs" />
+    <Compile Remove="lib\DeviceService.ComponentModel\IActivationService.cs" />
+    <Compile Remove="lib\DeviceService.ComponentModel\IApplicationControl.cs" />
+    <Compile Remove="lib\DeviceService.ComponentModel\IApplicationSettings.cs" />
+    <Compile Remove="lib\DeviceService.ComponentModel\IDeviceServiceClient.cs" />
+    <Compile Remove="lib\DeviceService.ComponentModel\IDeviceServiceClientCore.cs" />
+    <Compile Remove="lib\DeviceService.ComponentModel\IDeviceServiceShutDownInfo.cs" />
+    <Compile Remove="lib\DeviceService.ComponentModel\IDeviceStatusService.cs" />
+    <Compile Remove="lib\DeviceService.ComponentModel\IHttpService.cs" />
+    <Compile Remove="lib\DeviceService.ComponentModel\IIUC285Notifier.cs" />
+    <Compile Remove="lib\DeviceService.ComponentModel\IIUC285Proxy.cs" />
+    <Compile Remove="lib\DeviceService.ComponentModel\IMessageScrub.cs" />
+    <Compile Remove="lib\DeviceService.ComponentModel\InsertedStatus.cs" />
+    <Compile Remove="lib\DeviceService.ComponentModel\ITestIUC285Proxy.cs" />
+    <Compile Remove="lib\DeviceService.ComponentModel\IUC285Model.cs" />
+    <Compile Remove="lib\DeviceService.ComponentModel\KDS\IKioskDataServiceClient.cs" />
+    <Compile Remove="lib\DeviceService.ComponentModel\KioskData.cs" />
+    <Compile Remove="lib\DeviceService.ComponentModel\LogHandler.cs" />
+    <Compile Remove="lib\DeviceService.ComponentModel\ObfuscationHelper.cs" />
+    <Compile Remove="lib\DeviceService.ComponentModel\obj\Debug\netstandard2.1\.NETStandard,Version=v2.1.AssemblyAttributes.cs" />
+    <Compile Remove="lib\DeviceService.ComponentModel\OnCardReaderState.cs" />
+    <Compile Remove="lib\DeviceService.ComponentModel\OnConnected.cs" />
+    <Compile Remove="lib\DeviceService.ComponentModel\OnDeviceServiceCanShutDown.cs" />
+    <Compile Remove="lib\DeviceService.ComponentModel\OnDeviceServiceShutDownInfoChange.cs" />
+    <Compile Remove="lib\DeviceService.ComponentModel\OnDisconnected.cs" />
+    <Compile Remove="lib\DeviceService.ComponentModel\RebootStatus.cs" />
+    <Compile Remove="lib\DeviceService.ComponentModel\RebootType.cs" />
+    <Compile Remove="lib\DeviceService.ComponentModel\Requests\BluefinActivationRequest.cs" />
+    <Compile Remove="lib\DeviceService.ComponentModel\Requests\CardBrandAndSource.cs" />
+    <Compile Remove="lib\DeviceService.ComponentModel\Requests\CardReadRequest.cs" />
+    <Compile Remove="lib\DeviceService.ComponentModel\Requests\DeviceStatusRequest.cs" />
+    <Compile Remove="lib\DeviceService.ComponentModel\Requests\IBluefinActivationRequest.cs" />
+    <Compile Remove="lib\DeviceService.ComponentModel\Requests\ICardReadRequest.cs" />
+    <Compile Remove="lib\DeviceService.ComponentModel\Requests\VasMode.cs" />
+    <Compile Remove="lib\DeviceService.ComponentModel\ResponseStatus.cs" />
+    <Compile Remove="lib\DeviceService.ComponentModel\Responses\Base87CardReadModel.cs" />
+    <Compile Remove="lib\DeviceService.ComponentModel\Responses\BaseEvent.cs" />
+    <Compile Remove="lib\DeviceService.ComponentModel\Responses\BaseResponseEvent.cs" />
+    <Compile Remove="lib\DeviceService.ComponentModel\Responses\CancelCommandResponseEvent.cs" />
+    <Compile Remove="lib\DeviceService.ComponentModel\Responses\CancelResponseEvent.cs" />
+    <Compile Remove="lib\DeviceService.ComponentModel\Responses\CardReaderConnectedEvent.cs" />
+    <Compile Remove="lib\DeviceService.ComponentModel\Responses\CardReaderDisconnectedEvent.cs" />
+    <Compile Remove="lib\DeviceService.ComponentModel\Responses\CardReaderState.cs" />
+    <Compile Remove="lib\DeviceService.ComponentModel\Responses\CardReaderStateEvent.cs" />
+    <Compile Remove="lib\DeviceService.ComponentModel\Responses\CardRemoveResponseEvent.cs" />
+    <Compile Remove="lib\DeviceService.ComponentModel\Responses\CheckActivationResponseEvent.cs" />
+    <Compile Remove="lib\DeviceService.ComponentModel\Responses\CheckDeviceStatusResponseEvent.cs" />
+    <Compile Remove="lib\DeviceService.ComponentModel\Responses\DeviceServiceCanShutDownEvent.cs" />
+    <Compile Remove="lib\DeviceService.ComponentModel\Responses\DeviceServiceShutDownResponseEvent.cs" />
+    <Compile Remove="lib\DeviceService.ComponentModel\Responses\DeviceServiceShutDownStartingEvent.cs" />
+    <Compile Remove="lib\DeviceService.ComponentModel\Responses\DeviceTamperedEvent.cs" />
+    <Compile Remove="lib\DeviceService.ComponentModel\Responses\EMVCardReadModel.cs" />
+    <Compile Remove="lib\DeviceService.ComponentModel\Responses\EMVCardReadResponseEvent.cs" />
+    <Compile Remove="lib\DeviceService.ComponentModel\Responses\EncryptedCardReadModel.cs" />
+    <Compile Remove="lib\DeviceService.ComponentModel\Responses\EncryptedCardReadResponseEvent.cs" />
+    <Compile Remove="lib\DeviceService.ComponentModel\Responses\GetCardInsertedStatusResponseEvent.cs" />
+    <Compile Remove="lib\DeviceService.ComponentModel\Responses\GetUnitHealthResponseEvent.cs" />
+    <Compile Remove="lib\DeviceService.ComponentModel\Responses\ICardReadResponseEvent.cs" />
+    <Compile Remove="lib\DeviceService.ComponentModel\Responses\IEncryptedCardReadModel.cs" />
+    <Compile Remove="lib\DeviceService.ComponentModel\Responses\IsConnectedResponseEvent.cs" />
+    <Compile Remove="lib\DeviceService.ComponentModel\Responses\RebootCardReaderResponseEvent.cs" />
+    <Compile Remove="lib\DeviceService.ComponentModel\Responses\ReportAuthorizationResultResponseEvent.cs" />
+    <Compile Remove="lib\DeviceService.ComponentModel\Responses\ResponseBaseModel.cs" />
+    <Compile Remove="lib\DeviceService.ComponentModel\Responses\SignalREvents.cs" />
+    <Compile Remove="lib\DeviceService.ComponentModel\Responses\SimpleEvent.cs" />
+    <Compile Remove="lib\DeviceService.ComponentModel\Responses\SimpleResponseEvent.cs" />
+    <Compile Remove="lib\DeviceService.ComponentModel\Responses\StandardResponse.cs" />
+    <Compile Remove="lib\DeviceService.ComponentModel\Responses\SupportsEMVResponseEvent.cs" />
+    <Compile Remove="lib\DeviceService.ComponentModel\Responses\TimeoutResponseEvent.cs" />
+    <Compile Remove="lib\DeviceService.ComponentModel\Responses\UnencryptedCardReadModel.cs" />
+    <Compile Remove="lib\DeviceService.ComponentModel\Responses\UnencryptedCardReadResponseEvent.cs" />
+    <Compile Remove="lib\DeviceService.ComponentModel\Responses\UnitDataModel.cs" />
+    <Compile Remove="lib\DeviceService.ComponentModel\Responses\UnitHealthModel.cs" />
+    <Compile Remove="lib\DeviceService.ComponentModel\Responses\ValidateVersionModel.cs" />
+    <Compile Remove="lib\DeviceService.ComponentModel\Responses\ValidateVersionResponseEvent.cs" />
+    <Compile Remove="lib\DeviceService.ComponentModel\ShutDownReason.cs" />
+    <Compile Remove="lib\DeviceService.ComponentModel\SwipeType.cs" />
+    <Compile Remove="lib\DeviceService.ComponentModel\TagConstants.cs" />
+    <Compile Remove="lib\DeviceService.ComponentModel\TagDetails.cs" />
+    <Compile Remove="lib\DeviceService.ComponentModel\WalletType.cs" />
+    <Compile Remove="lib\DeviceService.Domain\ActivationService.cs" />
+    <Compile Remove="lib\DeviceService.Domain\ApplicationSettings.cs" />
+    <Compile Remove="lib\DeviceService.Domain\AssemblyInfo.cs" />
+    <Compile Remove="lib\DeviceService.Domain\Constants.cs" />
+    <Compile Remove="lib\DeviceService.Domain\DataFileHelper.cs" />
+    <Compile Remove="lib\DeviceService.Domain\DeviceService.cs" />
+    <Compile Remove="lib\DeviceService.Domain\DeviceServiceConfig.cs" />
+    <Compile Remove="lib\DeviceService.Domain\DeviceStatusService.cs" />
+    <Compile Remove="lib\DeviceService.Domain\FileUpdate\FileModel.cs" />
+    <Compile Remove="lib\DeviceService.Domain\FileUpdate\FileUpdateResult.cs" />
+    <Compile Remove="lib\DeviceService.Domain\FileUpdate\FileUpdateResults.cs" />
+    <Compile Remove="lib\DeviceService.Domain\FileUpdate\FileUpdateService.cs" />
+    <Compile Remove="lib\DeviceService.Domain\FileUpdate\UpdateFileManifest.cs" />
+    <Compile Remove="lib\DeviceService.Domain\FileUpdate\UpdateFileManifestProperties.cs" />
+    <Compile Remove="lib\DeviceService.Domain\FileUpdate\ZipFileUpdateResult.cs" />
+    <Compile Remove="lib\DeviceService.Domain\IUC285Notifier.cs" />
+    <Compile Remove="lib\DeviceService.Domain\IUC285Proxy.cs" />
+    <Compile Remove="lib\DeviceService.Domain\obj\Debug\netstandard2.1\.NETStandard,Version=v2.1.AssemblyAttributes.cs" />
+    <Compile Remove="lib\DeviceService.Domain\ParseTags.cs" />
+    <Compile Remove="lib\DeviceService.Domain\ReadCardContext.cs" />
+    <Compile Remove="lib\DeviceService.Domain\ReadCardContextState.cs" />
+    <Compile Remove="lib\DeviceService.Domain\VasCardType.cs" />
+    <Compile Remove="lib\DeviceService.Domain\VasCmd.cs" />
+    <Compile Remove="lib\DeviceService.Domain\VasMessageStatus.cs" />
+    <Compile Remove="lib\DeviceService.Domain\VasResult.cs" />
+    <Compile Remove="lib\DeviceService.Domain\VasStatus.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <PackageReference Include="Microsoft.AspNetCore" Version="2.2.0" />
+    <PackageReference Include="Microsoft.AspNetCore.Diagnostics" Version="2.2.0" />
+    <PackageReference Include="Microsoft.AspNetCore.Hosting" Version="2.2.0" />
+    <PackageReference Include="Microsoft.AspNetCore.Hosting.Server.Abstractions" Version="2.2.0" />
+    <PackageReference Include="Microsoft.AspNetCore.Hosting.WindowsServices" Version="2.2.0" />
+    <PackageReference Include="Microsoft.AspNetCore.Http.Abstractions" Version="2.2.0" />
+    <PackageReference Include="Microsoft.AspNetCore.HttpsPolicy" Version="2.2.0" />
+    <PackageReference Include="Microsoft.AspNetCore.Mvc" Version="2.2.0" />
+    <PackageReference Include="Microsoft.AspNetCore.Mvc.Core" Version="2.2.0" />
+    <PackageReference Include="Microsoft.AspNetCore.Razor.Runtime" Version="2.2.0" />
+    <PackageReference Include="Microsoft.AspNetCore.SignalR" Version="1.1.0" />
+    <PackageReference Include="Microsoft.AspNetCore.SignalR.Core" Version="1.1.0" />
+    <PackageReference Include="Microsoft.Extensions.Configuration" Version="9.0.1" />
+    <PackageReference Include="Microsoft.Extensions.Configuration.Abstractions" Version="9.0.1" />
+    <PackageReference Include="Microsoft.Extensions.Configuration.Binder" Version="9.0.1" />
+    <PackageReference Include="Microsoft.Extensions.Configuration.FileExtensions" Version="9.0.1" />
+    <PackageReference Include="Microsoft.Extensions.Configuration.Json" Version="9.0.1" />
+    <PackageReference Include="Microsoft.Extensions.Logging.Abstractions" Version="9.0.1" />
+    <PackageReference Include="Microsoft.Extensions.Options" Version="9.0.1" />
+    <PackageReference Include="Microsoft.Extensions.Options.ConfigurationExtensions" Version="9.0.1" />
+    <PackageReference Include="Newtonsoft.Json" Version="13.0.3" />
+    <PackageReference Include="Serilog" Version="2.9.0" />
+    <PackageReference Include="Serilog.AspNetCore" Version="2.0.0" />
+    <PackageReference Include="Serilog.Enrichers.Thread" Version="3.0.0" />
+    <PackageReference Include="Serilog.Settings.Configuration" Version="3.0.1" />
+    <PackageReference Include="Serilog.Sinks.Console" Version="3.1.1" />
+    <PackageReference Include="Swashbuckle.AspNetCore.Swagger" Version="4.0.1" />
+    <PackageReference Include="Swashbuckle.AspNetCore.SwaggerGen" Version="4.0.1" />
+    <PackageReference Include="Swashbuckle.AspNetCore.SwaggerUI" Version="4.0.1" />
+  </ItemGroup>
+  <ItemGroup>
+    <Reference Include="RBA_SDK_ComponentModel">
+      <HintPath>lib\RBA_SDK_ComponentModel.dll</HintPath>
+    </Reference>
+    <Reference Include="RBA_SDK_STANDARD">
+      <HintPath>lib\RBA_SDK_STANDARD.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+</Project>

@@ -1,0 +1,9 @@
+[submodule "lib/DeviceService.Domain"]
+	path = lib/DeviceService.Domain
+	url = https://github.com/Redbox-Automated-Retail/DeviceService.Domain
+[submodule "lib/DeviceService.Client.Core"]
+	path = lib/DeviceService.Client.Core
+	url = https://github.com/Redbox-Automated-Retail/DeviceService.Client.Core
+[submodule "lib/DeviceService.ComponentModel"]
+	path = lib/DeviceService.ComponentModel
+	url = https://github.com/Redbox-Automated-Retail/DeviceService.ComponentModel
